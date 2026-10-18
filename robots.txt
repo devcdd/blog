@@ -1,5 +1,5 @@
 User-Agent: *
 Allow: /
 
-Host: https://blog.cdd.co.kr
-Sitemap: https://blog.cdd.co.kr/sitemap.xml
+Host: https://cdd.co.kr/blog
+Sitemap: https://cdd.co.kr/blog/sitemap.xml

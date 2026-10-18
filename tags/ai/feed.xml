@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>디디의 개발일지</title>
+      <link>https://cdd.co.kr/blog/blog</link>
+      <description>디디의 개발 경험, 회고, 그리고 사이드 프로젝트들을 정리하는 블로그</description>
+      <language>ko-KR</language>
+      <managingEditor>developer.cdd@gmail.com (디디)</managingEditor>
+      <webMaster>developer.cdd@gmail.com (디디)</webMaster>
+      <lastBuildDate>Wed, 01 Apr 2026 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://cdd.co.kr/blog/tags/ai/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://cdd.co.kr/blog/blog/retrospect/AI를 바라보는 시선</guid>
+    <title>AI를 바라보는 시선</title>
+    <link>https://cdd.co.kr/blog/blog/retrospect/AI를 바라보는 시선</link>
+    <description>빠르게 발전하는 AI, 그리고 그에 대한 디디의 시선</description>
+    <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+    <author>developer.cdd@gmail.com (디디)</author>
+    <category>AI</category>
+  </item>
+
+    </channel>
+  </rss>
