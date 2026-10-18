@@ -65,7 +65,7 @@ export async function generateMetadata({
       images:
         ogImages.length > 0
           ? ogImages
-          : [{ url: siteMetadata.siteUrl + siteMetadata.socialBanner }],
+          : [{ url: new URL(siteMetadata.socialBanner, siteMetadata.siteUrl).toString() }],
       authors: authors.length > 0 ? authors : [siteMetadata.author],
     },
     twitter: {

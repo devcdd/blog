@@ -7,11 +7,13 @@ const siteMetadata = {
   language: 'ko-KR',
   locale: 'ko-KR',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://blog.cdd.co.kr',
-  siteRepo: 'https://github.com/devcdd/devcdd.github.io',
-  siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
-  socialBanner: '/static/images/twitter-card.png',
+  // cdd.co.kr/blog 하위 경로로 배포 (next.config.js 의 basePath 와 같아야 함)
+  basePath: '/blog',
+  siteUrl: 'https://cdd.co.kr/blog',
+  siteRepo: 'https://github.com/devcdd/blog',
+  siteLogo: '/blog/static/images/logo.png',
+  image: '/blog/static/images/avatar.png',
+  socialBanner: '/blog/static/images/twitter-card.png',
   email: 'developer.cdd@gmail.com',
   youtube: 'https://youtube.com/@cdd_world',
   instagram: 'https://www.instagram.com/cdd_world',
@@ -71,7 +73,7 @@ const siteMetadata = {
   search: {
     provider: 'kbar', // kbar or algolia
     kbarConfig: {
-      searchDocumentsPath: 'search.json', // path to load documents to search
+      searchDocumentsPath: 'blog/search.json', // path to load documents to search (origin 기준)
     },
     // provider: 'algolia',
     // algoliaConfig: {

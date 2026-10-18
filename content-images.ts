@@ -1,4 +1,4 @@
-export const STATIC_IMAGE_ROOT = '/static/images'
+export const STATIC_IMAGE_ROOT = '/blog/static/images'
 
 function normalizeDocumentPath(documentPath: string) {
   const normalized = documentPath.replaceAll('\\', '/')

@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/no-require-imports -- CommonJS 설정 파일 */
 const { withContentlayer } = require('next-contentlayer2')
+const siteMetadata = require('./articles/siteMetadata')
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
@@ -11,6 +13,7 @@ module.exports = () => {
   const plugins = [withContentlayer, withBundleAnalyzer]
   return plugins.reduce((acc, next) => next(acc), {
     reactStrictMode: true,
+    basePath: siteMetadata.basePath,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     images: {
       unoptimized: true,

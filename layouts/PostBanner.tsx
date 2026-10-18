@@ -20,7 +20,7 @@ interface LayoutProps {
 export default function PostMinimal({ content, next, prev, children }: LayoutProps) {
   const { slug, title, images, assetDir } = content
   const displayImage =
-    resolveDocumentImageList(images, assetDir)[0] ?? '/static/images/twitter-card.png'
+    resolveDocumentImageList(images, assetDir)[0] ?? '/blog/static/images/twitter-card.png'
 
   return (
     <MobileContentInset>

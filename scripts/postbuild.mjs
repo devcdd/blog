@@ -22,8 +22,23 @@ function toHostname(value) {
   }
 }
 
+function isSubPathSite(value) {
+  try {
+    return new URL(value).pathname.replace(/\/$/, '') !== ''
+  } catch {
+    return false
+  }
+}
+
 function resolveCname() {
-  return toHostname(process.env.GITHUB_PAGES_CNAME) ?? toHostname(siteMetadata.siteUrl)
+  if (process.env.GITHUB_PAGES_CNAME) {
+    return toHostname(process.env.GITHUB_PAGES_CNAME)
+  }
+  // cdd.co.kr/blog 처럼 하위 경로 사이트면 도메인은 devcdd.github.io 저장소가 관리함
+  if (isSubPathSite(siteMetadata.siteUrl)) {
+    return null
+  }
+  return toHostname(siteMetadata.siteUrl)
 }
 
 async function syncCname() {
